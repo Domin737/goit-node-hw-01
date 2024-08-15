@@ -58,5 +58,11 @@
     "name": "Mango",
     "email": "mango@gmail.com",
     "phone": "322-22-22"
+  },
+  {
+    "id": "x0xfl02tj6dr1rb0wxdyef",
+    "name": "Pawel D",
+    "email": "pawel.d@example.com",
+    "phone": "+48 963 852 741"
   }
 ]
