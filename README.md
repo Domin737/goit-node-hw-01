@@ -1,4 +1,4 @@
-# Simple contacts manager in Node.JS
+# Contacts manager in Node.JS
 
 This application is a command-line interface (CLI) for managing contacts using Node.js. The application allows users to list, add, get, and remove contacts stored in a JSON file. It demonstrates the use of file operations, command-line argument parsing, and basic error handling in Node.js.
 
