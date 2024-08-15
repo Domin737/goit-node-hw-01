@@ -19,7 +19,7 @@ To list all contacts and display them in a table format, use the following comma
 node index.js --action list
 ```
 
-Screenshot:
+Screenshot:  
 ![List Contacts](src/node_index_js_action_list.png)
 
 ### 2. Get contact by ID
@@ -30,7 +30,7 @@ To get the details of a contact using their unique ID, use the following command
 node index.js --action get --id 05olLMgyVQdWRwgKfg5J6
 ```
 
-Screenshot:
+Screenshot:  
 ![Get Contact by ID](src/node_index_js_action_get.png)
 
 ### 3. Add a new contact
@@ -41,7 +41,7 @@ To add a new contact to the list, use the following command:
 node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22
 ```
 
-Screenshot:
+Screenshot:  
 ![Add Contact](src/node_index_js_action_add.png)
 
 ### 4. Remove a contact
@@ -52,7 +52,7 @@ To remove a contact from the list using their unique ID, use the following comma
 node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
 ```
 
-Screenshot:
+Screenshot:  
 ![Remove Contact](src/node_index_js_action_remove.png)
 
 ## How to Run the Project
