@@ -43,6 +43,17 @@ async function removeContact(contactId) {
 async function addContact(name, email, phone) {
   try {
     const contacts = await listContacts();
+
+    // Sprawdzenie, czy kontakt z takimi danymi już istnieje
+    const existingContact = contacts.find(
+      (c) => c.name === name && c.email === email && c.phone === phone
+    );
+
+    if (existingContact) {
+      console.log("Contact with the same data already exists.");
+      return null;
+    }
+
     const newContact = { id: generateUniqueId(), name, email, phone };
     contacts.push(newContact);
     await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
