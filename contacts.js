@@ -3,7 +3,6 @@ const path = require("path");
 
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
-// Funkcja zwraca listę wszystkich kontaktów
 async function listContacts() {
   try {
     const data = await fs.readFile(contactsPath, "utf-8");
@@ -14,7 +13,6 @@ async function listContacts() {
   }
 }
 
-// Funkcja zwraca kontakt o podanym ID
 async function getContactById(contactId) {
   try {
     const contacts = await listContacts();
@@ -26,7 +24,6 @@ async function getContactById(contactId) {
   }
 }
 
-// Funkcja usuwa kontakt o podanym ID i zwraca zaktualizowaną listę kontaktów
 async function removeContact(contactId) {
   try {
     const contacts = await listContacts();
@@ -39,12 +36,10 @@ async function removeContact(contactId) {
   }
 }
 
-// Funkcja dodaje nowy kontakt do listy i zwraca nowo dodany kontakt
 async function addContact(name, email, phone) {
   try {
     const contacts = await listContacts();
 
-    // Sprawdzenie, czy kontakt z takimi danymi już istnieje
     const existingContact = contacts.find(
       (c) => c.name === name && c.email === email && c.phone === phone
     );
@@ -64,7 +59,6 @@ async function addContact(name, email, phone) {
   }
 }
 
-// Funkcja generuje unikalny ID dla nowego kontaktu
 function generateUniqueId() {
   return (
     Math.random().toString(36).substring(2, 15) +
