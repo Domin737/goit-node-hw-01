@@ -88,4 +88,3 @@ node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
 Screenshots:  
 ![List Contacts (4)](src/images/node_index_js_action_list_before_remove.png)
 ![Remove Contact](src/images/node_index_js_action_remove.png)
-![List Contacts (5)](src/images/node_index_js_action_list_after_remove.png)
