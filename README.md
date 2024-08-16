@@ -9,6 +9,14 @@ This application is a command-line interface (CLI) for managing contacts using N
 - **Add Contact**: Add a new contact with a name, email, and phone number to the list.
 - **Remove Contact**: Remove a contact from the list using their unique ID.
 
+## Project Structure
+
+- `index.js` - Entry point for the application.
+- `contacts.js` - Contains functions for performing operations on contacts.
+- `contacts.json` - JSON file where contacts are stored.
+- `db/` - Directory containing the `contacts.json` file.
+- `src/images` - Directory containing images used in project and aplication.
+
 ## How to Run the Project
 
 1. Clone this repository to your local machine.
@@ -31,14 +39,6 @@ npm start -- --action [action] --name [name] --email [email] --phone [phone] --i
 - `get` - Gets a contact by ID. Requires `--id` argument.
 - `add` - Adds a new contact. Requires `--name`, `--email`, and `--phone` arguments.
 - `remove` - Removes a contact by ID. Requires `--id` argument.
-
-## Project Structure
-
-- `index.js` - Entry point for the application.
-- `contacts.js` - Contains functions for performing operations on contacts.
-- `contacts.json` - JSON file where contacts are stored.
-- `db/` - Directory containing the `contacts.json` file.
-- `src/images` - Directory containing images used in project and aplication.
 
 ## Usage Examples
 
