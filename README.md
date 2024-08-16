@@ -20,8 +20,8 @@ node index.js --action list
 ```
 
 Screenshots:  
-![List Contacts](src/node_index_js_action_list.png)  
-![List Contacts (2)](src/node_index_js_action_list_2.png)
+![List Contacts](src/images/node_index_js_action_list.png)  
+![List Contacts (2)](src/images/node_index_js_action_list_2.png)
 
 ### 2. Get contact by ID
 
@@ -32,7 +32,7 @@ node index.js --action get --id 05olLMgyVQdWRwgKfg5J6
 ```
 
 Screenshots:  
-![Get Contact by ID](src/node_index_js_action_get.png)
+![Get Contact by ID](src/images/node_index_js_action_get.png)
 
 ### 3. Add a new contact
 
@@ -43,7 +43,7 @@ node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-2
 ```
 
 Screenshots:  
-![Add Contact](src/node_index_js_action_add.png)
+![Add Contact](src/images/node_index_js_action_add.png)
 
 ### 4. Remove a contact
 
@@ -54,7 +54,7 @@ node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
 ```
 
 Screenshots:  
-![Remove Contact](src/node_index_js_action_remove.png)
+![Remove Contact](src/images/node_index_js_action_remove.png)
 
 ## How to Run the Project
 
@@ -85,3 +85,4 @@ npm start -- --action [action] --name [name] --email [email] --phone [phone] --i
 - `contacts.js` - Contains functions for performing operations on contacts.
 - `contacts.json` - JSON file where contacts are stored.
 - `db/` - Directory containing the `contacts.json` file.
+- `src/images` - Directory containing images used in project and aplication.
